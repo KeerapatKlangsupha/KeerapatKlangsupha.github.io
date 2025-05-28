@@ -1,11 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>โปรไฟล์ของฉัน</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+    }
+
+    
+    body {
+      background: linear-gradient(to bottom, #e150a0 50%, white 50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+   
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+   
+    .profile-pic:hover {
+      transform: scale(1.05);
+    }
+
+    .info {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .info h2, .info p {
+      margin: 8px 0;
+      color: #333;
+    }
+
+   fade-in */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-    testttttt
+
+
+  <img src="https://pettownsendvet.com/wp-content/uploads/2023/01/iStock-1052880600.jpg"alt="รูปของฉัน" class="profile-pic" />
+
+  
+  <div class="info">
+    <h2>ชื่อ นาย กีรภัทร คลังสุภา</h2>
+    <p>GPX: 3.85</p>
+    <p>โรงเรียน: โรงเรียนปราโมทวิทยารามอินทรา</p>
+  </div>
+
 </body>
 </html>
