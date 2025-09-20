@@ -1,0 +1,173 @@
+body {
+    font-family: 'Kanit', Arial, sans-serif;
+    background-color: #fff7f0;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.calculator {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff3e0;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #d84315;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #eb6138;
+    border-bottom: 2px solid #f054ce;
+    padding-bottom: 5px;
+
+    /* ขอบดำบาง ๆ */
+    -webkit-text-stroke: 0.5px black;
+    text-shadow:
+        -0.5px -0.5px 0 black,
+        0.5px -0.5px 0 black,
+        -0.5px 0.5px 0 black,
+        0.5px 0.5px 0 black;
+}
+
+
+
+
+.numbers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.number-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffccbc;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    text-align: center;
+}
+
+.number-btn img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 7px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.number-btn:hover {
+    background-color: #ffab91;
+    transform: translateY(-3px);
+}
+
+.number-btn.selected {
+    background-color: #ff7043;
+    color: white;
+}
+
+.operation-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.add-btn {
+    background-color: #ff5722;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+    background-color: #e64a19;
+}
+
+.result-container {
+    background-color: #ffe0b2;
+    border: 2px solid #ff5722;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.calculation {
+    font-size: 18px;
+    color: #5d4037;
+    margin-bottom: 10px;
+}
+
+.result {
+    font-size: 26px;
+    font-weight: bold;
+    color: #bf360c;
+}
+
+.price {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #4e342e;
+}
+
+.clear-btn {
+    background-color: #d32f2f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.clear-btn:hover {
+    background-color: #b71c1c;
+}
+
+/* สีปุ่มตามหมวด */
+.category-meat {
+    background-color: #dd3232;
+}
+
+.category-snack {
+    background-color: #e1ec40;
+}
+
+.category-seafood {
+    background-color: #2cd9e9;
+}
+
+.category-veg {
+    background-color: #69ed5f;
+}
+
+.number-btn {
+    color: #fffffc;
+    /* สีตัวหนังสือ */
+    font-weight: bold;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    /* <-- ขอบดำ */
+}

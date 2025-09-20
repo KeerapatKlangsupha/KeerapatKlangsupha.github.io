@@ -1,70 +1,182 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>โปรไฟล์ของฉัน</title>
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: 'Arial', sans-serif;
-    }
-
-    
-    body {
-      background: linear-gradient(to bottom, #e150a0 50%, white 50%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      animation: fadeIn 1.5s ease-in;
-    }
-
-   
-    .profile-pic {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 15px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-      transition: transform 0.3s ease;
-    }
-
-   
-    .profile-pic:hover {
-      transform: scale(1.05);
-    }
-
-    .info {
-      margin-top: 20px;
-      text-align: center;
-    }
-
-    .info h2, .info p {
-      margin: 8px 0;
-      color: #333;
-    }
-
-   fade-in */
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>คุ้มไหม</title>
+        <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+        <div class="calculator">
+                <h1>❗กินคุ้มหรือยัง❓</h1>
+                <h2 id="ha">🌟กดที่รูปตามที่กินไปเพื่อคำนวนว่ากินคุ้มหรือยัง🌟</h2>
 
+                <!-- หมวด 1: เนื้อ & ไก่ -->
+                <h2>เนื้อ🍖</h2>
+                <div class="numbers-grid">
+                        <button id="เนื้อสไลด์(เล็ก)" class="number-btn category-meat"
+                                data-value="12">เนื้อสไลด์(เล็ก)<img src=".\img\เนื้อสไลด์.png"
+                                        alt="เนื้อสไลด์(เล็ก)"></button>
+                        <button id="เนื้อสไลด์(กลาง)" class="number-btn category-meat"
+                                data-value="16">เนื้อสไลด์(กลาง)<img
+                                        src=".\img\สกรีนช็อต 2025-08-17 233603.png"
+                                        alt="เนื้อสไลด์(กลาง)"></button>
+                        <button id="เนื้อสไลด์(ใหญ่)" class="number-btn category-meat"
+                                data-value="23">เนื้อสไลด์(ใหญ่)<img src=".\img\เนื้อสไลด์(ใหญ่).png"
+                                        alt="เนื้อสไลด์(ใหญ่)"></button>
 
-  <img src="https://pettownsendvet.com/wp-content/uploads/2023/01/iStock-1052880600.jpg"alt="รูปของฉัน" class="profile-pic" />
+                        <button id="สันคอหมูสไลด์(เล็ก)" class="number-btn category-meat"
+                                data-value="11">สันคอหมูสไลด์(เล็ก)<img src=".\img\สันคอหมูสไลด์.png"
+                                        alt="สันคอหมูสไลด์(เล็ก)"></button>
+                        <button id="สันคอหมูสไลด์(กลาง)" class="number-btn category-meat"
+                                data-value="14">สันคอหมูสไลด์(กลาง)<img
+                                        src=".\img\สันคอหมูสไลด์(ถาดกลาง).png"
+                                        alt="สันคอหมูสไลด์(กลาง)"></button>
+                        <button id="สันคอหมูสไลด์(ใหญ่)" class="number-btn category-meat"
+                                data-value="21">สันคอหมูสไลด์(ใหญ่)<img
+                                        src=".\img\สันคอหมูสไลด์(ถาดกใหญ่).png"
+                                        alt="สันคอหมูสไลด์(ใหญ่)"></button>
 
-  
-  <div class="info">
-    <h2>ชื่อ นาย กีรภัทร คลังสุภา</h2>
-    <p>GPX: 3.85</p>
-    <p>โรงเรียน: โรงเรียนปราโมทวิทยารามอินทรา</p>
-  </div>
+                        <button id="สันนอกหมูสไลด์(เล็ก)" class="number-btn category-meat"
+                                data-value="11">สันนอกหมูสไลด์(เล็ก)<img
+                                        src=".\img\สันนอกหมูสไลด์.png"
+                                        alt="สันนอกหมูสไลด์(เล็ก)"></button>
+                        <button id="สันนอกหมูสไลด์(กลาง)" class="number-btn category-meat"
+                                data-value="14">สันนอกหมูสไลด์(กลาง)<img
+                                        src=".\img\สันนอกหมูสไลด์(ถาดกลาง).png"
+                                        alt="สันนอกหมูสไลด์(กลาง)"></button>
+                        <button id="สันนอกหมูสไลด์(ใหญ่)" class="number-btn category-meat"
+                                data-value="22">สันนอกหมูสไลด์(ใหญ่)<img
+                                        src=".\img\สันนอกหมูสไลด์(ถาดใหญ่).png"
+                                        alt="สันนอกหมูสไลด์(ใหญ่)"></button>
 
+                        <button id="หมูสามชั้นสไลด์(เล็ก)" class="number-btn category-meat"
+                                data-value="13">หมูสามชั้นสไลด์(เล็ก)<img
+                                        src=".\img\หมูสามชั้นสไลด์.png"
+                                        alt="หมูสามชั้นสไลด์(เล็ก)"></button>
+                        <button id="หมูสามชั้นสไลด์(กลาง)" class="number-btn category-meat"
+                                data-value="15">หมูสามชั้นสไลด์(กลาง)<img
+                                        src=".\img\หมูสามชั้นสไลด์(ถาดกลาง).png"
+                                        alt="หมูสามชั้นสไลด์(กลาง)"></button>
+                        <button id="หมูสามชั้นสไลด์(ใหญ่)" class="number-btn category-meat"
+                                data-value="22">หมูสามชั้นสไลด์(ใหญ่)<img
+                                        src=".\img\หมูสามชั้นสไลด์(ถาดกใหญ่).png"
+                                        alt="หมูสามชั้นสไลด์(ใหญ่)"></button>
+
+                        <button id="ไก่ลาวา" class="number-btn category-meat" data-value="13">ไก่ลาวา<img
+                                        src=".\img\ไก่ลาวา.png" alt="ไก่ลาวา"></button>
+                        <button id="ไก่สไลด์(เล็ก)" class="number-btn category-meat" data-value="8">ไก่สไลด์(เล็ก)<img
+                                        src=".\img\ไก่สไลด์.png" alt="ไก่สไลด์(เล็ก)"></button>
+                        <button id="ไก่สไลด์(กลาง)" class="number-btn category-meat" data-value="11">ไก่สไลด์(กลาง)<img
+                                        src=".\img\ไก่สไลด์(ถาดกลาง).png"
+                                        alt="ไก่สไลด์(กลาง)"></button>
+                        <button id="ไก่สไลด์(ใหญ่)" class="number-btn category-meat" data-value="17">ไก่สไลด์(ใหญ่)<img
+                                        src=".\img\ไก่สไลด์(ถาดใหญ่).png"
+                                        alt="ไก่สไลด์(ใหญ่)"></button>
+
+                        <button id="หมูลาวา" class="number-btn category-meat" data-value="16">หมูลาวา<img
+                                        src=".\img\หมูลาวา.png" alt="หมูลาวา"></button>
+                        <button id="หมูพันสาหร่าย" class="number-btn category-meat" data-value="10">หมูพันสาหร่าย<img
+                                        src=".\img\หมูห่อสาหร่าย.png" alt="หมูพันสาหร่าย"></button>
+                        <button id="หมูไม้ไผ่" class="number-btn category-meat" data-value="12">หมูไม้ไผ่<img
+                                        src=".\img\หมูไม้ไผ่.png" alt="หมูไม้ไผ่"></button>
+                </div>
+
+                <!-- หมวด 2: ของกินเล่น & เส้น -->
+                <h2>ของกินเล่น🍥</h2>
+                <div class="numbers-grid">
+                        <button id="ลูกชิ้นปลา" class="number-btn category-snack" data-value="11">ลูกชิ้นปลา<img
+                                        src=".\img\ลูกชิ้นปลา.png"></button>
+                        <button id="ทรัฟเฟิลชีสบอล" class="number-btn category-snack" data-value="15">ทรัฟเฟิลชีสบอล<img
+                                        src=".\img\ทรัฟเฟิลชีสบอล.png"></button>
+                        <button id="เต้าหู่ชีส" class="number-btn category-snack" data-value="15">เต้าหู่ชีส<img
+                                        src=".\img\เต้าหู้ชีท.png"></button>
+                        <button id="ปูอัดชีส" class="number-btn category-snack" data-value="10">ปูอัดชีส<img
+                                        src=".\img\ปูอัดชีท.png"></button>
+                        <button id="ปูอัด" class="number-btn category-snack" data-value="7">ปูอัด<img
+                                        src=".\img\ปูอัด.png"></button>
+                        <button id="เต้าหู้ปลา" class="number-btn category-snack" data-value="11">เต้าหู้ปลา<img
+                                        src=".\img\เต้าหู้ปลา.png"></button>
+                        <button id="ปลาเส้น" class="number-btn category-snack" data-value="11">ปลาเส้น<img
+                                        src=".\img\ปลาเส้น.png"></button>
+                        <button id="เกี็ยวผักขมชีส" class="number-btn category-snack" data-value="14">เกี็ยวผักขมชีส<img
+                                        src=".\img\เกี็ยวผักขมชีส.png"></button>
+                        <button id="ไข่ไก่" class="number-btn category-snack" data-value="7">ไข่ไก่<img
+                                        src=".\img\ไข่ไก่.png"></button>
+                        <button id="เกี็ยวซ่าไก่" class="number-btn category-snack" data-value="13">เกี็ยวซ่าไก่<img
+                                        src=".\img\เกี็ยวซ่าไก่.png"></button>
+                        <button id="ปลาม้วนไข่เค็ม" class="number-btn category-snack" data-value="14">ปลาม้วนไข่เค็ม<img
+                                        src=".\img\ปลาม้วนไข่เค็ม.png"></button>
+                        <button id="ฟองเต้าหู่" class="number-btn category-snack" data-value="11">ฟองเต้าหู่<img
+                                        src=".\img\ฟองเต้าหู้.png"></button>
+                        <button id="เต้าหู่ไข่" class="number-btn category-snack" data-value="6">เต้าหู่ไข่<img
+                                        src=".\img\เต้าหู้ไข่.png"></button>
+                        <button id="มาม่า" class="number-btn category-snack" data-value="4">มาม่า<img
+                                        src=".\img\มาม่า.png"></button>
+                        <button id="บะหมี่หยก" class="number-btn category-snack" data-value="5">บะหมี่หยก<img
+                                        src=".\img\บะหมี่หยก.png"></button>
+                        <button id="ชีส" class="number-btn category-snack" data-value="11">ชีส<img
+                                        src=".\img\ชีท.png"></button>
+                </div>
+
+                <!-- หมวด 3: อาหารทะเล -->
+                <h2>อาหารทะเล🦐</h2>
+                <div class="numbers-grid">
+                        <button id="ปลาหมึก" class="number-btn category-seafood" data-value="16">ปลาหมึก<img
+                                        src=".\img\ปลาหมึก.png"></button>
+                        <button id="หอยแมลงภู่ชิลี่" class="number-btn category-seafood"
+                                data-value="18">หอยแมลงภู่ชิลี่<img src=".\img\ปลาหมึก.png"></button>
+                        <button id="กุ้ง" class="number-btn category-seafood" data-value="20">กุ้ง<img
+                                        src=".\img\กุ้ง.png"></button>
+                        <button id="แมงกระพรุน" class="number-btn category-seafood" data-value="16">แมงกระพรุน<img
+                                        src=".\img\แมงกะพรุน.png"></button>
+                        <button id="ปลาหมึกกรอบ" class="number-btn category-seafood" data-value="18">ปลาหมึกกรอบ<img
+                                        src=".\img\ปลาหมึกกรอบ.png"></button>
+                        <button id="ปลาดอลลี่" class="number-btn category-seafood" data-value="14">ปลาดอลลี่<img
+                                        src=".\img\ปลาดอลลี่.png"></button>
+                </div>
+
+                <!-- หมวด 4: ผัก -->
+                <h2>ผัก🥦</h2>
+                <div class="numbers-grid">
+                        <button id="เห็ดชิเมจิ" class="number-btn category-veg" data-value="11">เห็ดชิเมจิ<img
+                                        src=".\img\เห็ดชิเมจิ.png"></button>
+                        <button id="เห็ดออรินจิ" class="number-btn category-veg" data-value="11">เห็ดออรินจิ<img
+                                        src=".\img\เห็นออรินจิ.png"></button>
+                        <button id="เห็ดเข็มทอง" class="number-btn category-veg" data-value="9">เห็ดเข็มทอง<img
+                                        src=".\img\เห็ดเข็มทอง.png"></button>
+                        <button id="ข้าวโพดหวาน" class="number-btn category-veg" data-value="4">ข้าวโพดหวาน<img
+                                        src=".\img\ข้าวโพดหวาน.png"></button>
+                        <button id="แครอท" class="number-btn category-veg" data-value="3">แครอท<img
+                                        src=".\img\แครอท.png"></button>
+                        <button id="กะหล่ำปลี" class="number-btn category-veg" data-value="1">กะหล่ำปลี<img
+                                        src=".\img\กระหล่ำปลี.png"></button>
+                        <button id="สาหร่ายวากาเมะ" class="number-btn category-veg" data-value="4">สาหร่ายวากาเมะ<img
+                                        src=".\img\สาหร่ายวากาเมะ.png"></button>
+                        <button id="ข้าวโพดอ่อน" class="number-btn category-veg" data-value="5">ข้าวโพดอ่อน<img
+                                        src=".\img\ข้าวโพดอ่อน.png"></button>
+                        <button id="ผักรวม" class="number-btn category-veg" data-value="18">ผักรวม<img
+                                        src=".\img\ผักรวม.png"></button>
+                        <button id="ผักกาดไต้หวัน" class="number-btn category-veg" data-value="4">ผักกาดไต้หวัน<img
+                                        src=".\img\ผักกวางตุ้งไต้หวัน.png"></button>
+                        <button id="ผักกาดขาว" class="number-btn category-veg" data-value="3">ผักกาดขาว<img
+                                        src=".\img\ผักกาดขาว.png"></button>
+                </div>
+
+                <div class="operation-container">
+                        <button class="add-btn" id="addBtn">+</button>
+                </div>
+
+                <div class="result-container">
+                        <div id="equation"></div>
+                        <div class="calculation" id="calculation">เลือกตัวเลขและกดปุ่ม +</div>
+                        <div class="result" id="result">0</div>
+                        <div class="price" id="price">ราคา: 279</div>
+                        <div id="diff"></div>
+                        <button class="clear-btn" id="clearBtn">ล้าง</button>
+                </div>
+        </div>
+        <script src="index.js"></script>
 </body>
-</html>
